@@ -47,7 +47,7 @@ public class FileHelper {
         contents.add(receiveString);
       } inputStream.close();
     } else {
-      throw new FileNotFoundException("Could not get intput stream for path: " + filePath);
+      throw new FileNotFoundException("Could not get input stream for path: " + filePath);
     }
     if (contents.isEmpty()) {
       throw new IOException("No data found in file: " + filePath);
